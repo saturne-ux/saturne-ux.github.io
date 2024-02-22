@@ -1,2 +1,88 @@
-# saturne-ux.github.io
-web test
+  <html>
+  <head>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <title>Accueil</title>
+  </head>
+   <body onload="gcitation()"> 
+  <center>
+	<div class="bg"></div>
+	<div class="bg bg2"></div>
+	<div class="bg bg3"></div>
+	<div class="content">
+		<p class="quote">Citations</p>
+		<footer class="writer">
+			Auteur
+		</footer>
+	</div>
+   </center>
+  </body>
+  	<style type="text/css">
+html {
+    height:100%;
+}
+ 
+body {
+    margin:0;
+}
+ 
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #d7c891 50%, #006079 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+ 
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+ 
+.bg3 {
+    animation-duration:5s;
+}
+ 
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+ 
+h1 {
+    font-family:monospace;
+}
+ 
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+ 
+    100% {
+        transform:translateX(25%);
+    }
+}
+	</style>
+<script type="text/javascript"> 
+const citations = ["Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.", "Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie.", "Trois sortes d'amis sont utiles, trois sortes d'amis sont néfastes. Les utiles : un ami droit, un ami fidèle, un ami cultivé. Les néfastes : un ami faux, un ami mou, un ami bavard.", "La nature fait les hommes semblables, la vie les rend différents.", "Agis avec gentillesse, mais n'attends pas de la reconnaissance.", "Lorsque l'on se cogne la tête contre un pot et que cela sonne creux, ça n'est pas forcément le pot qui est vide.", "Sous un bon gouvernement, la pauvreté est une honte ; sous un mauvais gouvernement, la richesse est aussi une honte.", "Je ne cherche pas à connaître les réponses, je cherche à comprendre les question.", "Notre plus grande gloire n'est point de tomber, mais de savoir nous relever chaque fois que nous tombons.", "Nulle pierre ne peut être polie sans friction, nul homme ne peut parfaire son expérience sans épreuve."];
+const auteur = "Confucius";
+let aleatoire = null;
+
+	function gcitation() {
+		aleatoire = Math.floor(Math.random() * citations.length);
+		document.querySelector('.quote').innerHTML = citations[aleatoire];
+		document.querySelector('.writer').innerHTML = auteur;
+	};
+
+</script> 
+  </html>
