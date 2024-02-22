@@ -36,10 +36,6 @@
 	list-style-type:none;
 }
 
-#listeB li {
-	list-style-image:url("../img/button.png") ;
-}
-
 #article h2 {
 	font-size: 1.2em;
 }
@@ -58,7 +54,7 @@ p.ital {
 	background-color: #ffe;
 	box-shadow: 5px 5px 8px #aaa;
 }
-.imindex h1,.imindex p{ padding-left: 400px; padding-right: 20px; padding-bottom: 20px; }
+.imindex h1,.imindex p{ padding-left: 100px; padding-right: 20px; padding-bottom: 20px; }
 
 .stethoscales { 
 	padding: 20px;
