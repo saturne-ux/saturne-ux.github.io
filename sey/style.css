@@ -1,9 +1,9 @@
 /* --- COULEURS --- */
 
-/* --- GÉNÉRAL --- */
+/* --- GÃ‰NÃ‰RAL --- */
 body {
-	color: rgb(0, 0, 0);            /* Couleur générale du texte */
-	background: rgb(39, 20, 3);  /* Couleur de l'arrière-plan de l'ensemble de la page */
+	color: rgb(0, 0, 0);            /* Couleur gÃ©nÃ©rale du texte */
+	background: rgb(39, 20, 3);  /* Couleur de l'arriÃ¨re-plan de l'ensemble de la page */
  }
                                         
 a {
@@ -17,13 +17,13 @@ a:hover, a:focus {               /* Couleur normale des liens au survol et en cl
 
 /* --- BLOC CENTRAL CONTENANT #NAVIGATION ET #CONTENU --- */
 #centre {
-	background: url(images/colonnes.html) repeat-y;   /* Image en arrière-plan pour combler le bas des colonnes gauche et droite */
+	background: url(images/colonnes.html) repeat-y;   /* Image en arriÃ¨re-plan pour combler le bas des colonnes gauche et droite */
 }
 
 
 /* --- COLONNE GAUCHE --- */
 #navigation {
-	background: rgb(39, 20, 3); /* Couleur d'arrière-plan de la colonne gauche */
+	background: rgb(39, 20, 3); /* Couleur d'arriÃ¨re-plan de la colonne gauche */
 }
 #navigation a {                  /* Couleur normale des liens */
 	color: rgb(145, 145, 145);
@@ -39,7 +39,7 @@ a:hover, a:focus {               /* Couleur normale des liens au survol et en cl
 /* --- CONTENU PRINCIPAL COLONNE DROITE --- */
 #contenu {
 	color: rgb(0, 0, 0);            /* Couleur du texte de la colonne droite */
-	background: rgb(172, 141, 86); /* Couleur d'arrière-plan de la colonne droite */
+	background: rgb(172, 141, 86); /* Couleur d'arriÃ¨re-plan de la colonne droite */
 }
 #contenu a {                     /* Couleur normale des liens dans la colonne droite */
 	color: #332510;
@@ -56,29 +56,29 @@ a:hover, a:focus {               /* Couleur normale des liens au survol et en cl
 
 /* Page */
 body {
-	padding: 0px 0px; /* Marges externes à 0 pour coller la bannière en haut de la page */
-	margin: 0px 0px;  /* Marges internes à 0 pour coller la bannière en haut de la page */
+	padding: 0px 0px; /* Marges externes Ã  0 pour coller la banniÃ¨re en haut de la page */
+	margin: 0px 0px;  /* Marges internes Ã  0 pour coller la banniÃ¨re en haut de la page */
 }
 #global {
-	width: 750px;     /* Largeur du bloc #global (conteneur général contenant tous les autres blocs) */
-	margin: 0 auto;   /* Réglage à auto pour centrer le bloc horizontalement dans la page */
+	width: 750px;     /* Largeur du bloc #global (conteneur gÃ©nÃ©ral contenant tous les autres blocs) */
+	margin: 0 auto;   /* RÃ©glage Ã  auto pour centrer le bloc horizontalement dans la page */
 }
 
-/* En-tête */
+/* En-tÃªte */
 #entete {
-	padding: 250px 0px 0px 0px;     /* Hauteur de la bannière */
- background: url(deco/banniere.jpg) top left no-repeat;   /* Insertion de la bannière */
+	padding: 250px 0px 0px 0px;     /* Hauteur de la banniÃ¨re */
+ background: url("https://i.imgur.com/EWNZ5zE.jpeg") top left no-repeat;   /* Insertion de la banniÃ¨re */
 }
 #entete h1 {
-	margin: 30px;                   /* Réglage de la marge externe entre bannière et le bloc #centre */
-	text-indent: -50000px;          /* Décalage pour masquer le grand titre h1 vers la gauche */
+	margin: 30px;                   /* RÃ©glage de la marge externe entre banniÃ¨re et le bloc #centre */
+	text-indent: -50000px;          /* DÃ©calage pour masquer le grand titre h1 vers la gauche */
 	font-size: 0.2em;
 }
 
 /* Bloc central contenant #navigation et #contenu */
 #centre {
 	width: 100%;                    /* Largeur de la colonne de droite */
-	overflow: hidden;               /* Rognage automatique des éléments dépassant du bloc #centre */
+	overflow: hidden;               /* Rognage automatique des Ã©lÃ©ments dÃ©passant du bloc #centre */
 }
 
 /* Menu de navigation */
@@ -88,24 +88,24 @@ body {
 	float: left;
 }
 #navigation ul {
-	margin: 0;                      /* Marges externes de la colone gauche à 0 */
+	margin: 0;                      /* Marges externes de la colone gauche Ã  0 */
 	padding: 0px 3px 2px 3px;   /* Marges internes de la colonne gauche */
 	list-style: none;               /* Supression des puces du menu */
 }
 #navigation a {
 	display: block;                 /* Conversion de la balise a (inline) en block */
 	height: 1%;
-	padding: 6px 10px 3px 10px;     /* Modification de la hauteur des éléments du menu */
-	line-height: 1.1em;               /* Modification de la hauteur des éléments du menu */
+	padding: 6px 10px 3px 10px;     /* Modification de la hauteur des Ã©lÃ©ments du menu */
+	line-height: 1.1em;               /* Modification de la hauteur des Ã©lÃ©ments du menu */
 	font-size: 0.9em;                /* Taille du texte du menu */
-	text-decoration: none;          /* Suppression du souligné pour les liens du menu */
+	text-decoration: none;          /* Suppression du soulignÃ© pour les liens du menu */
 }
 
 /* Contenu */
 #contenu {
 	display: inline-block;
 	width: 530px;
-	margin-left: 20px;             /* Décalage et redimensionnement de la colonne de droite. Réglage à 20 par défaut */
+	margin-left: 20px;             /* DÃ©calage et redimensionnement de la colonne de droite. RÃ©glage Ã  20 par dÃ©faut */
 	padding: 1px 10px;             /* Marges internes du bloc contenu */     
 }
 #contenu p, #contenu li {
@@ -114,8 +114,8 @@ body {
 
 /* Pied de page */
 #pied {
-	margin: 0;                      /* Réglage des marges externes du pied de page */
-	padding: 10px 0px 10px  0px;    /* Réglage des marges internes du pied de page */
+	margin: 0;                      /* RÃ©glage des marges externes du pied de page */
+	padding: 10px 0px 10px  0px;    /* RÃ©glage des marges internes du pied de page */
 	font-size: 0.9em;               /* Taille du texte */
 	text-align: center;             /* Position du texte dans le bloc */
 	color: rgb(255, 255, 255);
@@ -128,15 +128,15 @@ form {
  width:350px;
  }
 select {
- border:1px solid black;         /* Contour du menu déroulant */
+ border:1px solid black;         /* Contour du menu dÃ©roulant */
  }
 fieldset {
  padding:0px;
- margin-bottom:20px;             /* Décale les 2 zones "coordonnées" et "message" vers le bas */
- border: none;                   /* Supprime l'effet de relief par défaut (moche) autour des fieldset "coordonnées" et "Votre message" */
+ margin-bottom:20px;             /* DÃ©cale les 2 zones "coordonnÃ©es" et "message" vers le bas */
+ border: none;                   /* Supprime l'effet de relief par dÃ©faut (moche) autour des fieldset "coordonnÃ©es" et "Votre message" */
  }
 legend {
- color:rgb(165, 35, 45);         /* Couleur des légendes */
+ color:rgb(165, 35, 45);         /* Couleur des lÃ©gendes */
  font-weight:bold
  }
 label {
@@ -151,7 +151,7 @@ textarea {                       /* Contour des champs de saisie multi-lignes ad
  }
 input[type=submit] {             /* Bouton d'envoi du formulaire */
  display:block;                  /* Conversion du bouton en block... */
- margin-left:439px;              /* ... afin de le décaler à droite */
+ margin-left:439px;              /* ... afin de le dÃ©caler Ã  droite */
  background-color: rgb(165, 35, 45);
  color: white;
  font-weight:bold
@@ -167,8 +167,8 @@ input[type=submit] {             /* Bouton d'envoi du formulaire */
      top: 50%;
      width: 750px;  /* Largeur de l'image */
      height: 680px;    /* Hauteur de l'image */
-     margin-top: -340px;     /* Hauteur de la maquette divisée par 2 */
-     margin-left: -375px;   /* Largeur de la maquette divisée par 2 */
+     margin-top: -340px;     /* Hauteur de la maquette divisÃ©e par 2 */
+     margin-left: -375px;   /* Largeur de la maquette divisÃ©e par 2 */
      border-color: green;
 }
 #page-index
