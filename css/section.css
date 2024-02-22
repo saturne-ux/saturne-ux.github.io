@@ -1,0 +1,71 @@
+#section {
+	width: auto;
+	margin-bottom: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#section a {
+	color: #2f72b3;
+	text-decoration: none;
+}
+
+#section a:hover {
+	color: #2f72b3;
+	text-decoration: underline;
+}
+
+#article {
+	vertical-align: top;
+	padding-top: 5px;
+	text-align: justify;
+	padding-bottom: 15px;
+}
+
+#article h1 {
+	color: #2f72b3;
+	font-size: 1.2em;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	text-align:left;
+}
+
+#article li {
+	padding-bottom: 10px;
+	padding-left: 5px;
+	list-style-type:none;
+}
+
+#listeB li {
+	list-style-image:url("../img/button.png") ;
+}
+
+#article h2 {
+	font-size: 1.2em;
+}
+
+#article p {
+	font-size: 1em;
+}
+p.ital {
+    font-style: italic;
+}
+.illustration {	text-align: center; }
+.illustration img, .illustration iframe{ box-shadow: 5px 5px 8px #aaa; border: 0;}
+
+.imindex { 
+	margin-bottom: 100px;
+	background-color: #ffe;
+	box-shadow: 5px 5px 8px #aaa;
+}
+.imindex h1,.imindex p{ padding-left: 400px; padding-right: 20px; padding-bottom: 20px; }
+
+.stethoscales { 
+	padding: 20px;
+	padding-left: 40px;
+	float: left;
+}
+.mentionslegales { 
+	font-size: 0.75em;
+	text-align:center;
+}
