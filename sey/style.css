@@ -1,0 +1,201 @@
+/* --- COULEURS --- */
+
+/* --- GÉNÉRAL --- */
+body {
+	color: rgb(0, 0, 0);            /* Couleur générale du texte */
+	background: rgb(39, 20, 3);  /* Couleur de l'arrière-plan de l'ensemble de la page */
+ }
+                                        
+a {
+	color: #FF6533;                 /* Couleur normale des liens */
+}
+a:hover, a:focus {               /* Couleur normale des liens au survol et en cliquant */
+	color: #FF4C00;
+}
+
+
+
+/* --- BLOC CENTRAL CONTENANT #NAVIGATION ET #CONTENU --- */
+#centre {
+	background: url(images/colonnes.html) repeat-y;   /* Image en arrière-plan pour combler le bas des colonnes gauche et droite */
+}
+
+
+/* --- COLONNE GAUCHE --- */
+#navigation {
+	background: rgb(39, 20, 3); /* Couleur d'arrière-plan de la colonne gauche */
+}
+#navigation a {                  /* Couleur normale des liens */
+	color: rgb(145, 145, 145);
+}
+#navigation a:hover, #navigation a:focus {   
+	background: rgb(172, 141, 86);   /* Couleur du bloc de lien au survol */
+	color: rgb(255, 255, 255);      /* Couleur du texte en lien au survol */
+}
+.titre-menu {
+ color: rgb(172, 141, 86);
+}
+
+/* --- CONTENU PRINCIPAL COLONNE DROITE --- */
+#contenu {
+	color: rgb(0, 0, 0);            /* Couleur du texte de la colonne droite */
+	background: rgb(172, 141, 86); /* Couleur d'arrière-plan de la colonne droite */
+}
+#contenu a {                     /* Couleur normale des liens dans la colonne droite */
+	color: #332510;
+}
+#contenu a:hover, #contenu a:focus {    /* Couleur des liens au survol et au clic dans la colonne droite */
+	color: #6E5122;
+}
+#contenu h1 {                         
+	font-size: 1.3em;                     /* Taille des titres */
+}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+	padding: 0px 0px; /* Marges externes à 0 pour coller la bannière en haut de la page */
+	margin: 0px 0px;  /* Marges internes à 0 pour coller la bannière en haut de la page */
+}
+#global {
+	width: 750px;     /* Largeur du bloc #global (conteneur général contenant tous les autres blocs) */
+	margin: 0 auto;   /* Réglage à auto pour centrer le bloc horizontalement dans la page */
+}
+
+/* En-tête */
+#entete {
+	padding: 250px 0px 0px 0px;     /* Hauteur de la bannière */
+ background: url(deco/banniere.jpg) top left no-repeat;   /* Insertion de la bannière */
+}
+#entete h1 {
+	margin: 30px;                   /* Réglage de la marge externe entre bannière et le bloc #centre */
+	text-indent: -50000px;          /* Décalage pour masquer le grand titre h1 vers la gauche */
+	font-size: 0.2em;
+}
+
+/* Bloc central contenant #navigation et #contenu */
+#centre {
+	width: 100%;                    /* Largeur de la colonne de droite */
+	overflow: hidden;               /* Rognage automatique des éléments dépassant du bloc #centre */
+}
+
+/* Menu de navigation */
+#navigation {
+	display: inline-block;
+	width: 180px;                   /* Largeur de la colonne de gauche (navigation) */
+	float: left;
+}
+#navigation ul {
+	margin: 0;                      /* Marges externes de la colone gauche à 0 */
+	padding: 0px 3px 2px 3px;   /* Marges internes de la colonne gauche */
+	list-style: none;               /* Supression des puces du menu */
+}
+#navigation a {
+	display: block;                 /* Conversion de la balise a (inline) en block */
+	height: 1%;
+	padding: 6px 10px 3px 10px;     /* Modification de la hauteur des éléments du menu */
+	line-height: 1.1em;               /* Modification de la hauteur des éléments du menu */
+	font-size: 0.9em;                /* Taille du texte du menu */
+	text-decoration: none;          /* Suppression du souligné pour les liens du menu */
+}
+
+/* Contenu */
+#contenu {
+	display: inline-block;
+	width: 530px;
+	margin-left: 20px;             /* Décalage et redimensionnement de la colonne de droite. Réglage à 20 par défaut */
+	padding: 1px 10px;             /* Marges internes du bloc contenu */     
+}
+#contenu p, #contenu li {
+	line-height: 1.5;               /* Hauteur des lignes dans la colonne de droite */
+}
+
+/* Pied de page */
+#pied {
+	margin: 0;                      /* Réglage des marges externes du pied de page */
+	padding: 10px 0px 10px  0px;    /* Réglage des marges internes du pied de page */
+	font-size: 0.9em;               /* Taille du texte */
+	text-align: center;             /* Position du texte dans le bloc */
+	color: rgb(255, 255, 255);
+}
+
+
+/* --- FORMULAIRE --- */
+form { 
+ padding:0px;                    /* Espace autour du formulaire */
+ width:350px;
+ }
+select {
+ border:1px solid black;         /* Contour du menu déroulant */
+ }
+fieldset {
+ padding:0px;
+ margin-bottom:20px;             /* Décale les 2 zones "coordonnées" et "message" vers le bas */
+ border: none;                   /* Supprime l'effet de relief par défaut (moche) autour des fieldset "coordonnées" et "Votre message" */
+ }
+legend {
+ color:rgb(165, 35, 45);         /* Couleur des légendes */
+ font-weight:bold
+ }
+label {
+ margin-top:10px;                /* Modifie l'espacement entre les champs de saisie */
+ display:block;
+ }    
+input {                          /* Contour des champs de saisie */
+ border:1px solid black;
+ } 
+textarea {                       /* Contour des champs de saisie multi-lignes adresse et message */
+ border:1px solid black;
+ }
+input[type=submit] {             /* Bouton d'envoi du formulaire */
+ display:block;                  /* Conversion du bouton en block... */
+ margin-left:439px;              /* ... afin de le décaler à droite */
+ background-color: rgb(165, 35, 45);
+ color: white;
+ font-weight:bold
+ border: none;
+ }
+
+/* --- CENTRAGE IMAGE PAGE INDEX --- */
+
+#global-index 
+{
+     position:absolute;
+     left: 50%;
+     top: 50%;
+     width: 750px;  /* Largeur de l'image */
+     height: 680px;    /* Hauteur de l'image */
+     margin-top: -340px;     /* Hauteur de la maquette divisée par 2 */
+     margin-left: -375px;   /* Largeur de la maquette divisée par 2 */
+     border-color: green;
+}
+#page-index
+{
+     overflow:hidden; /* Masque la barre d'ascenseur */
+}
+#global-index a {
+ color: rgb(39, 20, 3);  /* Suppression du cadre de couleur autour de l'image */
+}
+#image-index p {
+ margin: 0;              /* Suppression des marges externes du conteneur paragraphe de l'image */
+}
+
+.itemph {
+  margin-left: 12px;
+  margin-bottom: 10px;
+  float: left;
+  width: 160px;
+  min-height: 180px;
+  text-align: left;
+}
+.itemph img { width: 160px;}
+
+.txtgalerie {
+  margin: 10px;
+  margin-top: -10px;
+  float: left;
+  clear:left;
+  text-align: justify;
+}
